@@ -376,3 +376,4 @@ docker run -p 8000:8000 mental-health-signal
 1. **No Data Storage**: The application does not store, log, or track user submissions in any database or file.
 2. **Sanitized Logging**: Server logs record only system status and prediction latency without printing personal responses or sensitive wellness data.
 3. **No Medical Claims**: Mental health is multifaceted and deeply personal. Statistical correlations between digital usage, study duration, and self-reported stress should never replace qualified clinical guidance.
+# Mental-Health-Prediction
