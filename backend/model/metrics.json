@@ -1,0 +1,73 @@
+{
+  "dataset_shape": [
+    5000,
+    14
+  ],
+  "train_size": 3500,
+  "test_size": 1500,
+  "feature_columns": [
+    "Study_Hours",
+    "Age",
+    "Avg_Daily_Usage_Hours",
+    "Daily_Unlocks",
+    "Physical_Activity_Hours",
+    "Sleep_Hours_Per_Night",
+    "Stress_Level",
+    "Gender",
+    "Academic_Level",
+    "Most_Used_Platform",
+    "Purpose_Of_Use",
+    "Grouped_country"
+  ],
+  "target_column": "Mental_Health_Score",
+  "top_countries": [
+    "Other",
+    "India",
+    "USA",
+    "Canada",
+    "Australia",
+    "UK",
+    "Germany",
+    "Mexico",
+    "Turkey",
+    "France"
+  ],
+  "models": {
+    "Linear Regression": {
+      "train_r2": 0.7181478594797894,
+      "test_r2": 0.7529720892563002,
+      "train_mae": 0.5294160644654399,
+      "test_mae": 0.5131590367352666,
+      "train_rmse": 0.6702564238714823,
+      "test_rmse": 0.6534138435316064
+    },
+    "Random Forest (Default)": {
+      "train_r2": 0.9816086940355324,
+      "test_r2": 0.8819644303844093,
+      "train_mae": 0.1253612095238096,
+      "test_mae": 0.33905622222222237,
+      "train_rmse": 0.1712129464017123,
+      "test_rmse": 0.451670544170318
+    },
+    "Random Forest (Tuned)": {
+      "best_params": {
+        "regressor__n_estimators": 300,
+        "regressor__min_samples_split": 2,
+        "regressor__min_samples_leaf": 1,
+        "regressor__max_depth": null
+      },
+      "train_r2": 0.9822643170769051,
+      "test_r2": 0.8825640301844818,
+      "train_mae": 0.12386811700680261,
+      "test_mae": 0.3379997153439151,
+      "train_rmse": 0.1681335079742442,
+      "test_rmse": 0.450521880353929
+    }
+  },
+  "selected_model": "Random Forest (Tuned)",
+  "test_metrics": {
+    "MAE": 0.338,
+    "RMSE": 0.4505,
+    "R2": 0.8826
+  }
+}

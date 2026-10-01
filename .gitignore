@@ -1,0 +1,29 @@
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Distribution & IDE
+dist/
+build/
+*.egg-info/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Reference folder (used during development inspection)
+reference_repo/
+node_modules/
